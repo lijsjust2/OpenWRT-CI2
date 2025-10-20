@@ -73,6 +73,12 @@ UPDATE_PACKAGE "quickfile" "sbwml/luci-app-quickfile" "main"
 UPDATE_PACKAGE "viking" "VIKINGYFY/packages" "main" "" "luci-app-timewol luci-app-wolplus"
 UPDATE_PACKAGE "vnt" "lmq8267/luci-app-vnt" "main"
 
+# 添加现在的插件
+# echo "CONFIG_PACKAGE_luci-app-oaf=y" >>.config 
+# git clone https://github.com/destan19/OpenAppFilter.git package/OpenAppFilter    
+UPDATE_PACKAGE "luci-app-oaf" "destan19/OpenAppFilter" "master"
+
+
 #更新软件包版本
 UPDATE_VERSION() {
 	local PKG_NAME=$1
