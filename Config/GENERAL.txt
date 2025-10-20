@@ -1,3 +1,5 @@
+#添加应用过滤(OAF)
+CONFIG_PACKAGE_luci-app-oaf=y
 #科学插件调整
 CONFIG_PACKAGE_luci-app-homeproxy=y
 #增加插件
