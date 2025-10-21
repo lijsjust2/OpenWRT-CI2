@@ -47,7 +47,8 @@ UPDATE_PACKAGE() {
 # 添加现在的插件
 # echo "CONFIG_PACKAGE_luci-app-oaf=y" >>.config 
 # git clone https://github.com/destan19/OpenAppFilter.git package/OpenAppFilter    
-UPDATE_PACKAGE "luci-app-oaf" "destan19/OpenAppFilter" "master"
+# UPDATE_PACKAGE "luci-app-oaf" "destan19/OpenAppFilter" "master"
+UPDATE_PACKAGE "open-app-filter" "destan19/OpenAppFilter" "master" "" "luci-app-oaf oaf"
 
 # UPDATE_PACKAGE "包名" "项目地址" "项目分支" "pkg/name，可选，pkg为从大杂烩中单独提取包名插件；name为重命名为包名"
 UPDATE_PACKAGE "argon" "sbwml/luci-theme-argon" "openwrt-24.10"
